@@ -123,6 +123,11 @@ npm run dev
 npx hygen component new my-component
 ```
 
+scssファイルと一緒に生成する時は `--style`フラグをつける。
+```bash
+npx hygen component new my-component --style
+```
+
 ページ:
 
 ```bash

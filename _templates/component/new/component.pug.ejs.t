@@ -5,4 +5,4 @@ mixin <%- h.changeCase.param(name) %>(props = {})
 	-
 		props = Object.assign({}, props);
 
-	div(class="")&attributes(attributes)
+	div(class="<%- locals.style ? `c-${h.changeCase.param(name)}` : null %>")&attributes(attributes)
