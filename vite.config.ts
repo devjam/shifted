@@ -8,6 +8,13 @@ export default defineConfig({
 	logLevel: "warn",
 	server: {
 		host: "0.0.0.0",
+		proxy: {
+			"^/api": {
+				target: "http://localhost:8888",
+				changeOrigin: true,
+				secure: false,
+			},
+		},
 	},
 	build: {
 		rollupOptions: {

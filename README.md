@@ -147,6 +147,25 @@ hygen component new my-component
 
 GitHub Actions によって、GitHub リポジトリにプッシュされるたびに当該コマンドが自動実行されます。
 
+## PHPコンテナの起動法法
+
+`static` 以下がコンテナ内にコピーされます。
+
+```bash
+docker compose build # 初回のみでOK
+
+docker compose up
+docker compose up -d  # バックグラウンドで起動
+
+docker compose down --rmi local --volumes --remove-orphans # バルス
+```
+
+`static/api` 以下はプロキシ経由でフロント側のアプリケーションからアクセスできます。  
+e.g. noteのRSSをPHPでブリッジしてフロント側でパースしたい時とか
+  
+コンテナ起動後に`http://localhost:8025`にアクセスするとコンテナ内のメールの送受信を確認できるツールが表示されます。
+
+
 ## サブディレクトリでの公開
 
 サブディレクトリでサイトが公開される場合、`config.js` を次のように記述することでビルド設定を変更できます。
