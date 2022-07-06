@@ -36,5 +36,18 @@ module.exports = {
 				},
 			],
 		},
+		{
+			name: "styles",
+			dependencies: [
+				"src/styles/components/*.scss",
+				"!src/styles/components/index.scss",
+			],
+			outputs: [
+				{
+					path: "src/styles/components/index.scss",
+					template: "src/styles/components/.import.scss.ejs",
+				},
+			],
+		},
 	],
 };

@@ -6,3 +6,4 @@ npm-debug.log*
 /src/scripts/stores/index.ts
 /src/site/includes/components/.components.pug
 /stats.html
+/src/styles/components/index.scss

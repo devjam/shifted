@@ -5,3 +5,5 @@
 @import "prose";
 
 @import "tailwindcss/utilities";
+
+@import "components/index.scss";
