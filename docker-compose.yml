@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  web:
+    build: ./php
+    volumes:
+      - ./static:/var/www/html
+    ports:
+      - "8888:80"
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+      - "1025:1025"

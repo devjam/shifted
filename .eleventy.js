@@ -46,6 +46,11 @@ module.exports = (eleventyConfig) => {
 		globals: ["f"],
 	});
 
+	// Parse static dir on production.
+	// if (process.env.ELEVENTY_ENV === "production") {
+	// 	eleventyConfig.addPassthroughCopy({ static: "." });
+	// }
+
 	return {
 		dir: {
 			input: "src/site/pages",
