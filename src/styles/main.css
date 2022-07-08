@@ -2,8 +2,7 @@
 @import "base";
 
 @import "tailwindcss/components";
+@import "components/index.scss";
 @import "prose";
 
 @import "tailwindcss/utilities";
-
-@import "components/index.scss";
