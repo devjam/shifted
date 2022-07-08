@@ -14,6 +14,8 @@
 	},
 	/* Extensions > CSS Language Feature > CSS */
 	"css.validate": false,
+	/* Extensions > CSS Language Feature > SCSS (Sass) */
+	"scss.lint.unknownAtRules": "ignore",
 	/* Extensions > Emmet */
 	"emmet.includeLanguages": {
 		"tailwindcss": "css"
